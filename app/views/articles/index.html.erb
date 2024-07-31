@@ -1,0 +1,29 @@
+
+
+<html>
+<head>
+</head>
+<body>
+<h1>Employees</h1>
+
+
+ <table>
+  <tr>
+     <th> Name</th>
+     <th>  Department</th>
+     <th> Comapny</th>
+  </tr>
+
+    <% @e.each do |e| %>
+   <tr>
+    <td> <%= e.name%></td>
+    <td> <%= e.department%></td>
+    <td> <%= e.company%></td>
+   </tr>
+   <% end %>
+
+ </table>
+
+
+</body>
+</html>
